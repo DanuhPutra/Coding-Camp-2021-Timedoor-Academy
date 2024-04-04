@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanuzWebsite</title>
+    <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+
+    <div class="banner">
+        <div class="navbar">
+            <p id="date">Date</p>
+            <img src="logo-removebg-preview.png" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lesson.html">Lesson</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                </ul>
+    </div>
+
+
+    <section class="about">
+        <div class="main">
+            <img src="aboutme.jpeg" data-aos="fade-right"  data-aos-duration="3000">
+            <div class="about-text" data-aos="fade-left"  data-aos-duration="3000">
+                <h2>About Me</h2>
+                <h5>Programmer <span>& Gamers </span></h5>
+                <p> Hi, I'm a junir programmer. my name is Ngurah Danuh Putra, I'm studying at SMP Negeri 12 Denpasar.and i learned coding at timedoor academy</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="service">
+        <div class="title" data-aos="fade-up"  data-aos-duration="3000">
+            <h2>Other</h2>
+        </div>
+        <div class="box" data-aos="fade-down"  data-aos-duration="3000">
+            <div class="card">
+                <i class="fas fa-user"></i>
+                <h5> Name </h5>
+                <div class="pra">
+                    <p> Ngurah Danuh Putra</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-sort-numeric-up-alt"></i>
+                <h5> Age </h5>
+                <div class="pra">
+                    <p> 14 Years Old</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-thumbs-up"></i>
+                <h5> Kesan pesan mengikutin coding camp </h5>
+                <div class="pra">
+                    <p> Sangat senang karena bisa mendapatkan ilmu baru didalam dunia pemograman</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-bahai"></i>
+                <h5> Hobby </h5>
+                <div class="pra">
+                    <p> Coding and play a games</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-award"></i>
+                <h5> Cita Cita </h5>
+                <div class="pra">
+                    <p> Programmer & Sovware Developer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="logo-removebg-preview.png" class="footer">
+        <h2>DanuzPutra</h2>
+        <p> Copyright @2021 DanuzPutra. Created by Ngurah Danuh Putra</p><br><br>
+        <h4>follow us</h4> <br>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/ngurahdanuhputra.ngurahdanuhputra" target="blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/channel/UC3RRJDEO9N5cbAZoA8rMWLg" target="blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/danuhputra/" target="blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@danuhgamingz?lang=id-ID" target="blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+    </footer>
+    
+    <script>
+        var date =  new Date();
+        var hari = date.getDay();
+        var tanggal = date.getDate();
+        var bulan = date.getMonth();
+        var tahun = date.getFullYear();
+
+        var list_hari = ['minggu','senin','selasa','rabu','kamis','jumat','sabtu']
+        var list_bulan = ['januari','februari','maret','april','mei','juni','juli','agustus','september','oktober','november','desember',];
+
+        var hari_sekarang = list_hari[hari]
+        var bulan_sekarang = list_bulan[bulan];
+
+        document.getElementById('date').innerHTML = hari_sekarang +  "," + tanggal + " " + bulan_sekarang + " " + tahun;
+        AOS.init();
+    </script>
+</body>
+</body>
+</html>

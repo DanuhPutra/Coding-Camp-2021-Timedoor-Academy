@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanuzWebsite</title>
+    <link rel="stylesheet" href="lesson.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+
+    <!-- SETTINGAN NAVBAR -->
+    <header>
+        <div class="banner">
+            <div class="navbar">
+                <p id="date">Date</p>
+                <img src="logo-removebg-preview.png" class="logo">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lesson.html">Lesson</a></li>
+                        <li><a href="aboutme.html">About Me</a></li>
+                    </ul>
+            </div>
+        </div>
+    </header>
+    
+    <!-- ISI CONTENT-->
+
+    <section class="coding1" id="coding1" data-aos="fade-right"  data-aos-duration="3000">
+        <div class="heading">
+            <div class="row">
+                <div class="image">
+                    <img src="coding.png">
+                </div>
+                <div class="content">
+                    <h2> What is Coding ?</h2>
+                    <p> Coding, sometimes called computer programming, is how we communicate with computers. 
+                    Code tells a computer what actions to take, and writing code is like creating a set of instructions. 
+                    By learning to write code, you can tell computers what to do or how to behave in a much faster way. 
+                    You can use this skill to make websites and apps, process data, and do lots of other cool things.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="website">
+        <div class="tengah">
+            <div class="kolom">
+                <h2> Website </h2>
+                <p> A website is a collection of publicly accessible, interlinked Web pages that share a 
+                    single domain name. Websites can be created and maintained by an individual, group, 
+                    business or organization to serve a variety of purposes.
+                </p>
+            </div>
+            <div class="bahasa-list" data-aos="fade-down"  data-aos-duration="3000" >
+                <div class="detail-bahasa">
+                    <img src="html.jpg">
+                    <p> HTML, or HyperText Markup Language, allows web users can create and structure sections, paragraphs, 
+                        and links using elements, tags, and attributes. However, it’s worth nothing that HTML is not 
+                        considered a programming language as it can’t create dynamic functionality.
+                    </p>
+                </div>
+                <div class="detail-bahasa">
+                    <img src="css.jpg">
+                    <p> CSS (Cascading Style Sheets) allows you to create great-looking web pages, 
+                        but how does it work under the hood? This article explains what CSS is, with 
+                        a simple syntax example, and also covers some key terms about the language.
+                    </p>
+                </div>
+                <div class="detail-bahasa">
+                    <img src="javascript.jpg">
+                    <p> JavaScript is a scripting or programming language that allows you to implement 
+                        complex features on web pages — every time a web page does more than just sit 
+                        there and display static information for you to look at — displayin.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="construct1" id="construct1" data-aos="fade-left"  data-aos-duration="3000">
+        <div class="construct">
+            <div class="row">
+                <div class="imagex">
+                    <img src="construct.png">
+                </div>
+                <div class="content">
+                    <h2> What is Construct ?</h2>
+                    <p> Construct 3 is a 2D game engine that can be used to design and create your own games, 
+                        such as puzzles, platformers, role-playing games (RPGs), shooters, racing games, 
+                        or even storybooks. Construct 3 also includes the Box2D physics engine for creating 
+                        physics-based games.
+                    </p>
+                    <div class="buttox">
+                        <a href="https://danuhsurvivalgalaxy.netlify.app" target="blank"><span></span> Play the Games </a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+    </section>
+        
+
+    <footer>
+        <h2>DanuzPutra</h2>
+        <p> Copyright @2021 DanuzPutra. Created by Ngurah Danuh Putra</p><br><br>
+        <h4>follow us</h4> <br>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/ngurahdanuhputra.ngurahdanuhputra" target="blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/channel/UC3RRJDEO9N5cbAZoA8rMWLg" target="blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/danuhputra/" target="blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@danuhgamingz?lang=id-ID" target="blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+    </footer>
+
+
+    <script>
+        var date =  new Date();
+        var hari = date.getDay();
+        var tanggal = date.getDate();
+        var bulan = date.getMonth();
+        var tahun = date.getFullYear();
+
+        var list_hari = ['minggu','senin','selasa','rabu','kamis','jumat','sabtu']
+        var list_bulan = ['januari','februari','maret','april','mei','juni','juli','agustus','september','oktober','november','desember',];
+
+        var hari_sekarang = list_hari[hari]
+        var bulan_sekarang = list_bulan[bulan];
+
+        document.getElementById('date').innerHTML = hari_sekarang +  "," + tanggal + " " + bulan_sekarang + " " + tahun;
+        AOS.init();
+    </script>
+</body>
+</html>
